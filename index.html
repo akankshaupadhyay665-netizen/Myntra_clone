@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Store | Myntra Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="#" class="logo">MYNTRA</a>
+
+        <nav class="nav-links">
+            <a href="#men" data-filter="men">MEN</a>
+            <a href="#women" data-filter="women">WOMEN</a>
+            <a href="#kids" data-filter="kids">KIDS</a>
+            <a href="#beauty" data-filter="beauty">BEAUTY</a>
+            <a href="#products" data-filter="all">OFFERS</a>
+        </nav>
+
+        <div class="search-box">
+            <span>⌕</span>
+            <input id="searchInput" type="search"
+                   placeholder="Search for products, brands and more">
+        </div>
+
+        <div class="nav-icons">
+            <a href="#profile">
+                <span>♙</span>
+                <small>Profile</small>
+            </a>
+            <a href="#wishlist">
+                <span>♡</span>
+                <small>Wishlist</small>
+            </a>
+            <a href="#bag" id="bagLink">
+                <span>♧</span>
+                <small id="bagCount">Bag (0)</small>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">NEW SEASON • NEW STYLE</p>
+                <h1>YOUR STYLE,<br>YOUR STORY.</h1>
+                <p class="hero-description">
+                    Discover your next favourite look.
+                </p>
+                <a href="#products" class="shop-button">EXPLORE NOW →</a>
+            </div>
+        </section>
+
+    
+        <section class="categories" id="categories">
+            <h2>EXPLORE CATEGORIES</h2>
+            <div class="category-list">
+                <button class="category-button active" data-filter="all">All</button>
+                <button class="category-button" data-filter="men">Men</button>
+                <button class="category-button" data-filter="women">Women</button>
+                <button class="category-button" data-filter="beauty">Beauty</button>
+            </div>
+        </section>
+
+        
+        <section class="products-section" id="products">
+            <div class="section-heading">
+                <div>
+                    <p class="section-subtitle">CURATED FOR YOU</p>
+                    <h2>Trending Styles</h2>
+                </div>
+                <p class="product-count" id="productCount">8 Products</p>
+            </div>
+
+            <div class="product-grid" id="productGrid">
+
+                <article class="product-card" data-id="1" data-category="women">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=500&q=80" alt="Women's casual outfit">
+                        <span class="discount-badge">40% OFF</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Style Studio</h3>
+                        <p class="product-name">Women's Casual Outfit</p>
+                        <p class="price">₹899 <del>₹1,499</del></p>
+                        <button class="add-to-bag">ADD TO BAG</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-id="2" data-category="men">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=500&q=80" alt="Men's T-shirt">
+                        <span class="discount-badge">30% OFF</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Urban Basics</h3>
+                        <p class="product-name">Men's Classic T-Shirt</p>
+                        <p class="price">₹699 <del>₹999</del></p>
+                        <button class="add-to-bag">ADD TO BAG</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-id="3" data-category="women">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=500&q=80" alt="Women's summer dress">
+                        <span class="discount-badge">35% OFF</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Pretty Picks</h3>
+                        <p class="product-name">Women's Summer Dress</p>
+                        <p class="price">₹1,299 <del>₹1,999</del></p>
+                        <button class="add-to-bag">ADD TO BAG</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-id="4" data-category="men">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=500&q=80" alt="Fashion outfit">
+                        <span class="discount-badge">25% OFF</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Trend Theory</h3>
+                        <p class="product-name">Everyday Fashion Wear</p>
+                        <p class="price">₹1,499 <del>₹1,999</del></p>
+                        <button class="add-to-bag">ADD TO BAG</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-id="5" data-category="women">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=500&q=80" alt="Women's shopping outfit">
+                        <span class="discount-badge">20% OFF</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Chic Avenue</h3>
+                        <p class="product-name">Women's Fashion Wear</p>
+                        <p class="price">₹799 <del>₹999</del></p>
+                        <button class="add-to-bag">ADD TO BAG</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-id="6" data-category="men">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=500&q=80" alt="Men's casual clothing">
+                        <span class="discount-badge">30% OFF</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Street Mode</h3>
+                        <p class="product-name">Men's Casual Wear</p>
+                        <p class="price">₹1,049 <del>₹1,499</del></p>
+                        <button class="add-to-bag">ADD TO BAG</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-id="7" data-category="women">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1548624149-fbd4a5e3c6b6?auto=format&fit=crop&w=500&q=80" alt="Women's fashion clothing">
+                        <span class="discount-badge">40% OFF</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Daily Glam</h3>
+                        <p class="product-name">Weekend Outfit</p>
+                        <p class="price">₹1,199 <del>₹1,999</del></p>
+                        <button class="add-to-bag">ADD TO BAG</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-id="8" data-category="men">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1516257984-b1b4d707412e?auto=format&fit=crop&w=500&q=80" alt="Men's fashion outfit">
+                        <span class="discount-badge">25% OFF</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Modern Man</h3>
+                        <p class="product-name">Men's Everyday Style</p>
+                        <p class="price">₹1,499 <del>₹1,999</del></p>
+                        <button class="add-to-bag">ADD TO BAG</button>
+                    </div>
+                </article>
+
+            </div>
+            <p id="noResults" class="no-results" hidden>No matching products found.</p>
+        </section>
+
+    
+        <section class="bag-section" id="bag">
+            <div class="section-heading">
+                <div>
+                    <p class="section-subtitle">YOUR SELECTION</p>
+                    <h2>Shopping Bag</h2>
+                </div>
+            </div>
+
+            <div id="bagItems" class="bag-items"></div>
+
+            <div class="bag-summary">
+                <p>Total Items: <strong id="totalItems">0</strong></p>
+                <p>Total Amount: <strong id="totalAmount">₹0</strong></p>
+                <button id="checkoutButton" class="checkout-button">
+                    PLACE ORDER
+                </button>
+                <p class="checkout-note">Demo checkout — no payment will be taken.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>2026 Fashion Store | College Mini Project</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
